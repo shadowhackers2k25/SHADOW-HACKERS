@@ -286,8 +286,8 @@ function findRecipes() {
         <h3>${recipe.name}</h3>
         <div class="recipe-content">
           <div>
-            <p><strong>Time:</strong> ${recipe.time}</p>
-            <p><strong>Cost:</strong> ${recipe.cost}</p>
+            <p><strong>⏱️ Time:</strong> ${recipe.time}</p>
+            <p><strong>🤑 Cost:</strong> <span class="cost-badge cost-${recipe.cost.toLowerCase().replace(' ', '-')}">${recipe.cost}</span></p>
             ${links}
           </div>
           <div>
@@ -310,6 +310,6 @@ function findRecipes() {
   });
 
   if (!found) {
-    recipeList.innerHTML = "<p>No matching recipe found. Try fewer ingredients.</p>";
+    recipeList.innerHTML = "<p class=\"no-results\">No matching recipe found. Try fewer ingredients.</p>";
   }
 }
