@@ -13,6 +13,9 @@
       Enter ingredients you already have and get quick, healthy recipes.
     </p>
 
+    <!-- Format Instruction -->
+    <p class="instruction">📝 Format: lowercase ingredients, separated by comma & space (e.g., egg, rice, onion)</p>
+
     <!-- Input Section -->
     <div class="input-section">
       <input 
@@ -22,30 +25,35 @@
         placeholder="Type or select: egg, rice, onion"
       />
 
-        <datalist id="ingredientsList"></option>
+        <datalist id="ingredientsList">
         <option value="egg, rice, onion"></option>
         <option value="egg, onion"></option>
         <option value="rice, onion"></option>
         <option value="egg"></option>
-        <option value="Flour, Sugar, Cocoa powder, Milk"></option>
-        <option value="Bread, Egg"></option>
-        <option value="Maggi"></option>
-        <option value="Bread, Peanut Butter"></option>
-        <option value="Maggi"></option>
-        <option value="Banana, Milk, Sugar"></option>
-        <option value="Bread, Egg, Milk, Sugar"></option>
-        <option value="Poha"></option>
-        <option value="Poha, Onion"></option>
-        <option value="Any fruits, Chat masala"></option>
-        <option value="Cooked rice, Ghee"></option>
-        <option value="Bread, Onion, Tomato, Salt, Butter"></option>
-        <option value="Potato, Salt, Oil"></option>
-        <option value="Milk, Tea leaves, Sugar"></option>
-        
-
+        <option value="flour, sugar, cocoa powder, milk"></option>
+        <option value="bread, egg"></option>
+        <option value="maggi"></option>
+        <option value="bread, peanut butter"></option>
+        <option value="banana, milk, sugar"></option>
+        <option value="bread, egg, milk, sugar"></option>
+        <option value="poha, onion"></option>
+        <option value="any fruits, chat masala"></option>
+        <option value="cooked rice, ghee"></option>
+        <option value="bread, onion, tomato, salt, butter"></option>
+        <option value="potato, salt, oil"></option>
+        <option value="milk, tea leaves, sugar"></option>
+        <option value="milk, coffee powder, sugar"></option>
+        <option value="bread, cheese, butter"></option>
+        <option value="egg, onion, salt, oil"></option>
+        <option value="boiled corn, salt, butter"></option>
+        <option value="chicken, onion, tomato, garlic, ginger, spices"></option>
+        <option value="chicken, chili powder, turmeric, garlic, oil"></option>
+        <option value="mutton, onion, ginger, garlic, whole spices"></option>
+        <option value="chicken, curd, ginger garlic paste, spices"></option>
+        <option value="chicken, egg, onion, green chili, spices"></option>
         </datalist>
 
-      <button onclick="findRecipes()">Find Recipes here</button>
+      <button onclick="findRecipes()">Find Recipes</button>
     </div>
 
     <!-- Recipe Results -->
