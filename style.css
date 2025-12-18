@@ -42,7 +42,10 @@ input {
   flex: 1;
   padding: 10px;
   border-radius: 5px;
-
+  
+}
+input:hover{
+    border-color: aqua;
 }
 
 button {
@@ -55,7 +58,7 @@ button {
 }
 
 button:hover {
-  background-color: #128870;
+  background-color: aqua;
   box-shadow: 0px 0px 20px rgb(16, 207, 213);
 }
 
@@ -68,6 +71,8 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  border-color: aquamarine;
+  border-width: 2px;
 }
 
 .recipe-card h3 {
