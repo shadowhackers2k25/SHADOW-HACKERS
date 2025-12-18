@@ -18,8 +18,16 @@
       <input 
         type="text" 
         id="ingredientsInput" 
-        placeholder="Example: egg, rice, onion"
-      >
+        list="ingredientsList"
+        placeholder="Type or select: egg, rice, onion"
+      />
+
+        <datalist id="ingredientsList">
+        <option value="egg">
+        <option value="rice">
+        <option value="onion">
+        </datalist>
+
       <button onclick="findRecipes()">Find Recipes here</button>
     </div>
 
